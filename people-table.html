@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rows</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./src/favicon.ico">
+</head>
+<body>
+    <aside id="sidebar">
+        <img id="company-logo" src="./src/vALTRIA BLANCO.png" alt="Logo">
+        <ul id="nav-buttons">
+            <a class="button-main" href="./index.html"><span class="material-symbols-outlined">apartment</span>Projects</a>
+            <a class="button-main" href="./people.html"><span class="material-symbols-outlined">group</span>People</buttona>
+            <a class="button-main" href="./viewer.html"><span class="material-symbols-outlined">3d_rotation</span>Viewer</a>
+        </ul>
+    </aside>
+    <main id="content">
+        <dialog id="add-person">
+            <form>
+                <h2>New Person</h2>
+                <div class="input-list">
+                    <div class="form-field-container">
+                        <label><span class="material-symbols-outlined">psychology_alt</span>Name</label>
+                        <input type="text" placeholder="John Doe Garcia">
+                    </div>
+                    <div class="form-field-container">
+                        <label><span class="material-symbols-outlined">mail</span>E-mail</label>
+                        <input type="text" placeholder="info@valtria.com">
+                    </div>
+                    <div class="form-field-container">
+                        <label><span class="material-symbols-outlined">smartphone</span>Phone</label>
+                        <input type="text" placeholder="+34910609895">
+                        <p style="color:#969696; font-size: var(--font-sm); font-style: italic; margin-top: 2px">Note: Include international prefix.</p>
+                    </div>
+                    <div class="form-field-container">
+                        <label><span class="material-symbols-outlined">badge</span>Position</label>
+                        <select id="type">
+                            <option value="de">Designer</option>
+                            <option value="en">Engineer</option>
+                            <option value="sm">Site Manager</option>
+                            <option value="pd">Project Director</option>
+                        </select>
+                    </div>
+                    <div class="form-field-container">
+                        <label><span class="material-symbols-outlined">domain_add</span>Project</label>
+                        <select id="status">
+                                <option value="l9">Liconsa Nº9</option>
+                                <option value="p5">MSD Paracox P5</option>
+                                <option value="ad">Add new project</option>
+                        </select>
+                    </div>   
+                    <div class="form-field-container">
+                        <label><span class="material-symbols-outlined">description</span>Notes</label>
+                        <textarea id="Description" name="description" placeholder="If you need to add notes. To be checked by Valtria staff only."></textarea>
+                        <p style="color:#969696; font-size: var(--font-sm); font-style: italic; margin-top: 2px">Note: This information can be deleted or changed at a later date.</p>
+                    </div>
+                    <div style="display: flex; margin: 10px 0px 10px auto; column-gap: 15px;">
+                        <button style="background-color: transparent">Cancel</button>
+                        <button style="background-color:var(--primary-200);">Accept</button>
+                    </div>
+                </div>
+            </form>
+        </dialog>
+        <header>
+            <h2>People</h2>
+            <button class="new-button"><span class="material-symbols-outlined">add</span>Add Person</button>
+        </header>
+
+        <div class="table">
+            <div class="header-people">
+                <h2>Valtria' Staff</h2>
+            </div>
+            <div class="first-row">
+                <div style="width: 50px;">Initial</div>
+                <div style="width: 200px;">Name</div>
+                <div style="width: 150px;">E-mail</div>
+                <div style="width: 150px;">Phone</div>
+                <div style="width: 150px;">Position</div>
+                <div style="width: 300px;">Project</div>
+            </div>
+            <div class="row" style="background-color: var(--background-100)">
+                <div style="width: 50px;">JGV</div>
+                <div style="width: 200px;">John Doe Garcia</div>
+                <div style="width: 150px;">info@valtria.com</div>
+                <div style="width: 150px;">+34 910 60 98 05</div>
+                <div style="width: 150px;">No Position</div>
+                <div style="width: 300px;"><a class="no-color" href="./liconsa.html">Liconsa Nº9</a></div>
+                
+            </div>
+            <div class="row" style="background-color: var(--background-300)">
+                <div style="width: 50px;">JGV</div>
+                <div style="width: 200px;">Jose Garcia Garcia</div>
+                <div style="width: 150px;">info@valtria.com</div>
+                <div style="width: 150px;">+34 910 60 98 05</div>
+                <div style="width: 150px;">No Position</div>
+                <div style="width: 300px;"><a class="no-color" href="">MSD Paracox P05</a></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
