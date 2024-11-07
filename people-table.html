@@ -23,6 +23,11 @@
                 <h2>New Person</h2>
                 <div class="input-list">
                     <div class="form-field-container">
+                        <label><span class="material-symbols-outlined">camera_alt</span>Photo</label>
+                        <input type="file" accept="image/*" id="photo" name="photo">
+                        <p style="color:#969696; font-size: var(--font-sm); font-style: italic; margin-top: 2px">Note: Only image files are allowed.</p>
+                    </div>
+                    <div class="form-field-container">
                         <label><span class="material-symbols-outlined">psychology_alt</span>Name</label>
                         <input type="text" placeholder="John Doe Garcia">
                     </div>
@@ -54,7 +59,7 @@
                     </div>   
                     <div class="form-field-container">
                         <label><span class="material-symbols-outlined">description</span>Notes</label>
-                        <textarea id="Description" name="description" placeholder="If you need to add notes. To be checked by Valtria staff only."></textarea>
+                        <textarea id="Description" name="description" placeholder="If you need to add notes. To be checked by Valtria staff only." style="resize: vertical;"></textarea>
                         <p style="color:#969696; font-size: var(--font-sm); font-style: italic; margin-top: 2px">Note: This information can be deleted or changed at a later date.</p>
                     </div>
                     <div style="display: flex; margin: 10px 0px 10px auto; column-gap: 15px;">
@@ -73,30 +78,33 @@
             <div class="header-people">
                 <h2>Valtria' Staff</h2>
             </div>
-            <div class="first-row">
-                <div style="width: 50px;">Initial</div>
-                <div style="width: 200px;">Name</div>
-                <div style="width: 150px;">E-mail</div>
-                <div style="width: 150px;">Phone</div>
-                <div style="width: 150px;">Position</div>
-                <div style="width: 300px;">Project</div>
+            <div class="first-row" style="display:grid; grid-template-columns: 0.5fr 0.5fr 1.5fr 1.5fr 1fr 1fr 1fr;">
+                <div>Photo</div>
+                <div style>Initial</div>
+                <div style>Name</div>
+                <div style>E-mail</div>
+                <div style>Phone</div>
+                <div style>Position</div>
+                <div style>Project</div>
             </div>
-            <div class="row" style="background-color: var(--background-100)">
-                <div style="width: 50px;">JGV</div>
-                <div style="width: 200px;">John Doe Garcia</div>
-                <div style="width: 150px;">info@valtria.com</div>
-                <div style="width: 150px;">+34 910 60 98 05</div>
-                <div style="width: 150px;">No Position</div>
-                <div style="width: 300px;"><a class="no-color" href="./liconsa.html">Liconsa Nº9</a></div>
+            <div class="row" style="background-color: var(--background-100); display:grid; grid-template-columns: 0.5fr 0.5fr 1.5fr 1.5fr 1fr 1fr 1fr;">
+                <img src="./src/dummy.jpg" alt="No Photo" class="small-picture" style="justify-self: center;">
+                <div style>JGV</div>
+                <div style>John Doe Garcia</div>
+                <div style>info@valtria.com</div>
+                <div style>+34 910 60 98 05</div>
+                <div style>No Position</div>
+                <div style><a class="no-color" href="./liconsa.html">Liconsa Nº9</a></div>
                 
             </div>
-            <div class="row" style="background-color: var(--background-300)">
-                <div style="width: 50px;">JGV</div>
-                <div style="width: 200px;">Jose Garcia Garcia</div>
-                <div style="width: 150px;">info@valtria.com</div>
-                <div style="width: 150px;">+34 910 60 98 05</div>
-                <div style="width: 150px;">No Position</div>
-                <div style="width: 300px;"><a class="no-color" href="">MSD Paracox P05</a></div>
+            <div class="row" style="background-color: var(--background-300); display:grid; grid-template-columns: 0.5fr 0.5fr 1.5fr 1.5fr 1fr 1fr 1fr;">
+                <img src="./src/dummy.jpg" alt="No Photo" class="small-picture" style="justify-self: center;">
+                <div style>JGV</div>
+                <div style>Jose Garcia Garcia</div>
+                <div style>info@valtria.com</div>
+                <div style>+34 910 60 98 05</div>
+                <div style>No Position</div>
+                <div style><a class="no-color" href="">MSD Paracox P05</a></div>
             </div>
         </div>
     </main>

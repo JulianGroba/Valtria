@@ -387,7 +387,7 @@ iframe {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  font-size: var(--font-lg);
+  font-size: var(--font-2xl);
   margin-bottom: 10px;
   background-color: var(--background-300);
   border-radius: 8px;
@@ -397,8 +397,20 @@ iframe {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  font-size: var(--font-sm);
+  font-size: var(--font-lg);
   margin-bottom: 5px; 
   border-radius: 4px;
 
+}
+
+/*Photo & Last Changes*/
+
+.small-picture {
+  width: 30px;
+  height: 30px;
+}
+
+.form-field-container input[type="file"] {
+  background-color: var(--background-200);
+  color: var(--font-base);
 }
